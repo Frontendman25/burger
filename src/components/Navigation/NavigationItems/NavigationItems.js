@@ -3,13 +3,13 @@ import PropTypes from 'prop-types'
 
 import classes from './NavigationItems.module.css'
 
-import NavigationItem from './NavigationItem/NavigationItem';
+import NavigationItem from './NavigationItem/NavigationItem'
 
 function NavigationItems(props) {
   return (
     <div className={classes.NavigationItems}>
-      <NavigationItem link="/" active>Burger Builder</NavigationItem>
-      <NavigationItem link="/">Checkout</NavigationItem>
+      <NavigationItem link="/" exact>Burger Builder</NavigationItem>
+      <NavigationItem link="/orders">Checkout</NavigationItem>
     </div>
   )
 }
